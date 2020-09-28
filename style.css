@@ -9,7 +9,7 @@
 h1,
 h2,
 h3 {
-  color: #666;
+  color: darkslategray;
 }
 
 header,
@@ -35,7 +35,7 @@ header h1 {
 
 header span {
   font-size: 1.5em;
-  color: #999;
+  color: darkgray;
 }
 
 nav {
@@ -43,18 +43,16 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-
   display: flex;
   flex-flow: row;
   justify-content: center;
-
-  background: #333;
+  background: gray;
 }
 
 nav a {
   padding: 0.5em 2em;
   text-decoration: none;
-  color: #fff;
+  color: silver;
 }
 nav a:hover {
   background: #666;
@@ -77,6 +75,27 @@ section ul {
 
 #photo {
   display: grid;
+}
+
+#photo article h3 {
+  text-align: center;
+}
+
+#photo article {
+  background: #ccc;
+  padding: 2em;
+  -webkit-box-shadow: 15px 14px 20px -5px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 15px 14px 20px -5px rgba(0, 0, 0, 0.56);
+  box-shadow: 15px 14px 20px -5px rgba(0, 0, 0, 0.56);
+}
+
+#photo article img {
+  width: 100%;
+  align-items: center;
+}
+
+#projects {
+  text-decoration: none;
 }
 
 footer {
