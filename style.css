@@ -7,7 +7,7 @@
 }
 
 html {
-  background: black;
+  background: #1B1E22;
 }
 h1,
 h2,
@@ -86,10 +86,6 @@ section ul {
   padding-left: 1.5em;
 }
 
-#skills h2{
-  padding: 1.5em;
-}
-
 #photo article h3 {
   font-size: 22px;
   text-align: center;
@@ -108,7 +104,6 @@ section ul {
 
 }
 
-
 #photo article img {
   width: 60%;
   justify-content: center;
@@ -116,9 +111,81 @@ section ul {
   
 }
 
-div#projects {
-  text-decoration: none;
+#skills{
+  padding: 1.5;
+  background-color: #9DC5CC;
+  border-radius: 51px 20px 52px 20px;
+-moz-border-radius: 51px 20px 52px 20px;
+-webkit-border-radius: 51px 20px 52px 20px;
+border: 0px solid #000000;
 }
+
+#skills h2{
+  padding-top: 2.5em;
+  padding-left: 2.5em;
+}
+
+#skills p{
+
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 18px;
+  text-align: center;
+}
+
+#myProjects{
+  padding: 1.5em;
+  background-color: #9DC5CC;
+  border-radius: 51px 20px 52px 20px;
+-moz-border-radius: 51px 20px 52px 20px;
+-webkit-border-radius: 51px 20px 52px 20px;
+border: 0px solid #000000;
+}
+
+#myProjects article {
+  text-decoration: none;
+  color: white;
+}
+
+#myProjects h2{
+  padding: 1.5em;
+}
+
+#projects h3{
+  text-align: center;
+}
+
+#projects{
+  background-color: #596773;
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 1em;
+  border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  border: 0px solid #000000;
+}
+
+#projects article img{
+  width: 100%;
+  border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  border: 0px solid #000000;
+}
+
+#contactInfo{
+  padding: 1.5em;
+  background-color: #9DC5CC;
+  border-radius: 51px 20px 52px 20px;
+-moz-border-radius: 51px 20px 52px 20px;
+-webkit-border-radius: 51px 20px 52px 20px;
+border: 0px solid #000000;
+
+}
+
 
 footer {
   margin-top: 2em;
@@ -127,4 +194,8 @@ footer {
   color: #fff;
   padding: 1em 0;
   text-align: center;
+  border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  border: 0px solid #000000;
 }
