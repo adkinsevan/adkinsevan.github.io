@@ -1,15 +1,27 @@
 * {
-  font-family: "Courier New", Courier, monospace;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
   line-height: 1.618em;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html {
+  background: black;
+}
 h1,
 h2,
 h3 {
-  color: darkslategray;
+  color: white;
+}
+
+#aboutMe div{
+  padding: 2em;
+  background-color: #9DC5CC;
+  border-radius: 51px 20px 52px 20px;
+-moz-border-radius: 51px 20px 52px 20px;
+-webkit-border-radius: 51px 20px 52px 20px;
+border: 0px solid #000000;
 }
 
 header,
@@ -35,7 +47,7 @@ header h1 {
 
 header span {
   font-size: 1.5em;
-  color: darkgray;
+  color: white;
 }
 
 nav {
@@ -46,16 +58,17 @@ nav {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  background: gray;
+  background: #596773;
 }
 
 nav a {
   padding: 0.5em 2em;
   text-decoration: none;
-  color: silver;
+  color: #fff;
+  background-color: #596773;
 }
 nav a:hover {
-  background: #666;
+  background: #47525C;
 }
 
 section {
@@ -73,35 +86,44 @@ section ul {
   padding-left: 1.5em;
 }
 
-#photo {
-  display: grid;
+#skills h2{
+  padding: 1.5em;
 }
 
 #photo article h3 {
+  font-size: 22px;
   text-align: center;
+  display: flexbox;
 }
 
 #photo article {
-  background: #ccc;
+  background-color: #596773;
+  text-align: center;
+  display: flexbox;
   padding: 2em;
-  -webkit-box-shadow: 15px 14px 20px -5px rgba(0, 0, 0, 0.56);
-  -moz-box-shadow: 15px 14px 20px -5px rgba(0, 0, 0, 0.56);
-  box-shadow: 15px 14px 20px -5px rgba(0, 0, 0, 0.56);
+  border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  border: 0px solid #000000;
+
 }
+
 
 #photo article img {
-  width: 100%;
+  width: 60%;
+  justify-content: center;
   align-items: center;
+  
 }
 
-#projects {
+div#projects {
   text-decoration: none;
 }
 
 footer {
   margin-top: 2em;
   margin-bottom: 1em;
-  background: #666;
+  background: #596773;
   color: #fff;
   padding: 1em 0;
   text-align: center;
