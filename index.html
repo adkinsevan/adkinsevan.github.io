@@ -1,90 +1,115 @@
-<html>
-  <head>
-    <title>Evan Adkins Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Evan Adkins</h1>
-      <span>Full Stack Devolper</span>
-    </header>
-    <main>
-      <section id="aboutMe">
-        <div>
-          <h2>About Me:</h2>
-          <p>
-            A Code Devolper looking to obtain a challenging position applying my
-            creative problem solving skills with a growing company. I am a
-            student a We Can Code It, still honing my new skills. A fast learner
-            with a creative mind. A proven leader with experience in companies
-            both large and small. An experienced user the Adobe and Windows
-            suite.
-            <!-- place holder -->
-          </p>
-        </div>
-        <div id="photo">
-          <article>
-            <h3>Me:</h3>
-            <img
-            src="assets\107872189_3092706264182517_8389306860439405289_n.jpg"href=
-            alt="img />
-          </article>
-        </div>
-      <section>
-      <section id="skills">
-        <h2>Skills:</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>Evan Adkins Porfolio</title>
+</head>
+<body>
+  <header>
+    <div style="background-image: url(assets/122219502_1284644888554104_2461829265222993131_n.jpg);"
+    <h1>Evan Adkins</h1>
+    <span>Full Stack Devolper</span>
+  </header>
+  <main>
+    <section id="aboutMe">
+      <div>
+        <h2>About Me:</h2>
         <p>
-          Java • Spring • JPA • JavaScript • MVC • HTML • CSS • Flexbox • Grid •
-          TDD • Agile (Scrum) • Object Oriented Programming (OOP) • Responsive
-          Design / Mobile • Structured Query Language (SQL) • Relational
-          Databases • Source Control / Git • Google Docs • Microsoft Suite • IT diagnostics • 
-          Adobe Suite
+          I am a Code Devolper looking to obtain a challenging position applying my
+          creative problem solving skills with a growing company. I am a
+          recent graduate of We Can Code It, and still honing my new skills. I am fast learner
+          with a creative mind, A proven leader with experience in companies
+          both large and small, and an experienced user the Adobe and Windows
+          suite.
         </p>
-      </section>
-      <section id="myProjects">
-        <h2>Projects:</h2>
-        <div id="projects">
-     <article>
-       <h3>Virtual Pet</h3>
-       <a href="https://github.com/2020-Summer-Cohort/virtual-pet-adkinsevan">
-       <img src="assets\VirtualPet.PNG">
-       </a>
-     </article>
-     <article>
-      <h3>Virtual Pet Shelter</h3>
-      <a href="https://github.com/2020-Summer-Cohort/flexcode-virtual-pet-shelter-adkinsevan">
-      <img src="assets\virtualpetshelter.PNG">
-     </a>
-    </article>
-    <article>
-      <h3>Virtual Pet Amok</h3>
-      <a href="https://github.com/adkinsevan/VirtualPetAmok">
-      <img src="assets\VirtualPetAmok.png">
-    </a>
-    </article>
-        </div>
-      </section>
-      <section id="contactInfo">
-        <h2>Contact Information</h2>
+      </div>
+      <div id="photo">
+        <article>
+          <h3>Me:</h3>
+        </article>
+      </div>
+    <section>
+    <section id="skills">
+      <h2>Skills:</h2>
+      <button id = "skillsBtn">My Skills</button>
+      <div id="showSkills" class="modal">
+        <div class="skills-content">
+          <span class="close">&times;</span>
+      <p>
+        Java • Spring • JPA • JavaScript • MVC • HTML • CSS • Flexbox • Grid • JSON • Thymeleaf •
+        TDD • Agile (Scrum) • Object Oriented Programming (OOP) • Responsive
+        Design / Mobile • Structured Query Language (SQL) • Relational
+        Databases • Source Control / Git • Google Docs • Microsoft Suite • IT diagnostics • 
+        Adobe Suite
+      </p>
+      </div>
+    </div>
+    </section>
+    <section id="myProjects">
+      <h1>Projects:</h1>
+      <div class="container">
+          <button id="left-btn"><i class="arrow"></i></button>
+          <img id="carousel" src="" alt="">
+          <button id="right-btn"><i class="arrow"></i></button>
+      </div>
+      <div class="tab">
+        <button class="tablinks" onmouseover="openProjects(event, 'virtualPet')">Virtual Pet</button>
+        <button class="tablinks" onmouseover="openProjects(event, 'virtualPetShelter')">Virtual Pet Shelter</button>
+        <button class="tablinks" onmouseover="openProjects(event, 'virtualPetAmok')">Virtual Pet Amok</button>
+        <button class="tablinks" onmouseover="openProjects(event, 'reviewsSite')">Reviews Site</button>
+      </div>
+      <div id="VirtualPet" class="tabcontent">
+        <h3>Flow of Control and Class Design</h3>
+        <p>V pet place holder</p>
+      </div>
+      
+      <div id="VirtualPetShelter" class="tabcontent">
+        <h3> Java Collections</h3>
+        <p>V pet shelter place holder</p>
+      </div>
+      
+      <div id="VirtualPetAmok" class="tabcontent">
+        <h3>Inheritance</h3>
+        <p>V pet amok place holder</p>
+      </div>
+      
+      <div id="ReviewsSite" class="tabcontent">
+        <h3>Spring MVC</h3>
+        <p>Review Site place holder</p>
+      </div>
+      
+    </section>
+    <section id="contactInfo">
+      <h2>Contact Information</h2>
 
-        <p>Contact me at:</p>
-        <ul>
-          <li>Email: adkinsevan@ymail.com</li>
-          <li>Phone: (614) 370-0917</li>
-          <li>
-            <a href="https://www.linkedin.com/in/evan-adkins-a51bb01b4"
-              >Linkedin</a
-            >
-          </li>
-        </ul>
-      </section>
-    </main>
-    <nav>
-      <a href="#aboutMe">About Me</a>
-      <a href="#myProjects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contactInfo">Contact Information</a>
-    </nav>
-    <footer>&copy; 2020 Evan Adkins</footer>
-  </body>
+      <p>Contact me at:</p>
+      <ul>
+        <li>Email: adkinsevan@ymail.com</li>
+        <li>Phone: (614) 370-0917</li>
+        <li>
+          <a href="https://www.linkedin.com/in/evan-adkins-a51bb01b4"
+            >Linkedin</a
+          >
+        </li>
+      </ul>
+    </section>
+  </main>
+  <nav>
+  <div class="toogle-menu">
+    <h1 id= "toggle-bar">
+      ☰
+    </h1>
+    <ul class="navMenu">
+    <li><a href="#aboutMe">About Me</a></li>
+    <li><a href="#myProjects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contactInfo">Contact Information</a></li>
+    </ul>
+  </div>
+  </nav>
+  <footer>&copy; 2020 Evan Adkins</footer>
+  <script src="index.js"></script>
+</body>
 </html>
