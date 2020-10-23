@@ -1,21 +1,32 @@
-@media (max-width: 768px) {
-  .navMenu {
-    display: none;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Trispace&display=swap");
 
-  .navMenu.hamburger {
-    display: block;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (min-width: 769px) {
-  .navMenu {
-    display: initial;
-  }
+:root {
+  --royal-blue-dark: #0a2463ff;
+  --red-salsa: #fb3640ff;
+  --davys-grey: #605f5eff;
+  --celadon-blue: #247ba0ff;
+  --platinum: #e2e2e2ff;
+  --name-font: "Trispace", sans-serif;
+}
 
-  #toggle-bar {
-    display: none;
-  }
+body {
+  background-color: var(--davys-grey);
+}
+#right-btn {
+  padding: 0.6em;
+  max-width: 20px;
+  height: 20px;
+}
+#left-btn {
+  padding: 0.6em;
+  max-width: 20px;
+  height: 20px;
 }
 .tab {
   float: left;
@@ -57,4 +68,60 @@
   border-left: none;
   height: 300px;
   display: none;
+}
+
+#carousel {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--celadon-blue);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navMenu li {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  padding: 0.5em 0.6em;
+}
+.navMenu li a {
+  padding: 0;
+  color: #4d5061;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .navMenu {
+    display: none;
+  }
+
+  .navMenu.hamburger {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .navMenu {
+    display: initial;
+  }
+
+  #toggle-bar {
+    display: none;
+  }
+}
+
+.name {
+  display: block;
+  padding: 2em;
+  margin-top: 30px;
+  background-image: url(assets/122219502_1284644888554104_2461829265222993131_n.jpg);
 }
