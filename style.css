@@ -1,127 +1,126 @@
-@import url("https://fonts.googleapis.com/css2?family=Trispace&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-:root {
-  --royal-blue-dark: #0a2463ff;
-  --red-salsa: #fb3640ff;
-  --davys-grey: #605f5eff;
-  --celadon-blue: #247ba0ff;
-  --platinum: #e2e2e2ff;
-  --name-font: "Trispace", sans-serif;
+html {
+  color: #666;
+  background-color: gray;
+  font: 16px/1.618 sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
-body {
-  background-color: var(--davys-grey);
-}
-#right-btn {
-  padding: 0.6em;
-  max-width: 20px;
-  height: 20px;
-}
-#left-btn {
-  padding: 0.6em;
-  max-width: 20px;
-  height: 20px;
-}
-.tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 300px;
+.header {
+  color: white;
+  background-image: url("assets/header.jpg");
+  height: 270px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
+.header h1 {
+  font-size: 62px;
+  text-decoration: underline;
+  padding-left: 4%;
+  padding-top: 0.7%;
+}
+
+.header span {
+  font-size: 32px;
+  padding-left: 4%;
+}
+
+.flip__card {
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  margin-left: 25%;
+  height: 550px;
+  width: 470.55px;
+}
+
+.flip__front img {
+  height: 550px;
+  max-width: 100%;
+  position: relative;
+}
+
+.flip__card:hover .flip__info__inner {
+  transform: rotateY(180deg);
+}
+
+.flip__front,
+.flip__back {
+  position: absolute;
   width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.flip__back h2 {
+  text-decoration: underline;
 }
 
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  height: 300px;
-  display: none;
-}
-
-#carousel {
-  display: block;
-  margin: 0 auto;
-  max-width: 600px;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: var(--celadon-blue);
-  position: fixed;
-  top: 0;
+.flip__info__inner {
+  position: relative;
   width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-.navMenu li {
-  display: flex;
-  flex-direction: row;
-  float: left;
-  padding: 0.5em 0.6em;
-}
-.navMenu li a {
-  padding: 0;
-  color: #4d5061;
-  text-decoration: none;
-  font-size: 25px;
+.flip__back {
+  background-color: gray;
+  color: white;
+  transform: rotateY(180deg);
 }
 
-@media (max-width: 768px) {
-  .navMenu {
-    display: none;
-  }
-
-  .navMenu.hamburger {
-    display: block;
-  }
+.flip__back h2 {
+  font-size: 32px;
+  padding-top: 2em;
 }
 
-@media (min-width: 769px) {
-  .navMenu {
-    display: initial;
-  }
-
-  #toggle-bar {
-    display: none;
-  }
-}
-
-.name {
-  display: block;
+.flip__back p {
   padding: 2em;
-  margin-top: 30px;
-  background-image: url(assets/122219502_1284644888554104_2461829265222993131_n.jpg);
+}
+
+#skills {
+  padding-left: 2em;
+  padding-bottom: 2em;
+  display: flexbox;
+  margin-left: 25%;
+  max-width: 100%;
+  color: white;
+  background-color: cornflowerblue;
+}
+
+#skills h2 {
+  text-decoration: underline;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+#skill__list {
+  padding-right: 3em;
+}
+
+#projects__header {
+  margin-top: 0.5%;
+  padding-top: 2em;
+  padding-left: 3em;
+  text-decoration: underline;
+  color: white;
+  background-color: cornflowerblue;
+}
+
+#my__projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2.6em;
+  color: white;
+  background-color: cornflowerblue;
 }

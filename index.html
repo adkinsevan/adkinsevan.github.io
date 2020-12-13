@@ -3,102 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" type="text/css" href="/style.css" />
   <title>Evan Adkins Porfolio</title>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <div class="toogle-menu">
-        <h1 id= "toggle-bar">
-          ☰
-        </h1>
-     
-        <ul class="navMenu">
-        <li><a href="#aboutMe">About Me</a></li>
-        <li><a href="#myProjects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contactInfo">Contact Information</a></li>
-        </ul>
-      </div>
-      
-      </nav>
-    </header>
-    <div class="name">
+
+    <div class="header">
       <h1>Evan Adkins</h1>
       <span>Full Stack Devolper</span>
+
     </div>
-  
+
   <main>
-    <section id="aboutMe">
-      <div>
-        <h2>About Me:</h2>
-        <p>
+
+      <div class="flip__card">
+
+        <div class="flip__info__inner">
+          <div class="flip__front">
+            <img src="assets/me.jpg" alt="photo-of-me">
+          </div>
+
+          <div class="flip__back">
+          <h2>Who I am:</h2>
+          <p>
           I am a Code Devolper looking to obtain a challenging position applying my
           creative problem solving skills with a growing company. I am a
           recent graduate of We Can Code It, and still honing my new skills. I am fast learner
           with a creative mind, A proven leader with experience in companies
           both large and small, and an experienced user the Adobe and Windows
           suite.
-        </p>
-      </div>
-      <div id="photo">
-        <article>
-          <h3>Me:</h3>
-        </article>
-      </div>
-    <section>
-    <section id="skills">
-      <h2>Skills:</h2>
-      <button id = "skillsBtn">My Skills</button>
-      <div id="showSkills" class="modal">
-        <div class="skills-content">
-          <span class="close">&times;</span>
-      <p>
-        Java • Spring • JPA • JavaScript • MVC • HTML • CSS • Flexbox • Grid • JSON • Thymeleaf •
-        TDD • Agile (Scrum) • Object Oriented Programming (OOP) • Responsive
-        Design / Mobile • Structured Query Language (SQL) • Relational
-        Databases • Source Control / Git • Google Docs • Microsoft Suite • IT diagnostics • 
-        Adobe Suite
-      </p>
+          </p>
+          </div>
       </div>
     </div>
-    </section>
-    <section id="myProjects">
-      <h1>Projects:</h1>
-      <div class="container">
-          <button id="left-btn"><i class="arrow"></i></button>
-          <img id="carousel" src="" alt="">
-          <button id="right-btn"><i class="arrow"></i></button>
+
+    <div id="skills">
+      <h2>Skills:</h2>
+      <div id ="skill__list">
+        Java • Spring • JPA • JavaScript • MVC • HTML • CSS • Flexbox • Grid • TDD • OOP • JSON • Restful APIs • 
+        Responsive Design / Mobile • SQL • React • Relational Databases • Source Control / Git • Google Docs • IT diagnostics 
+        • Adobe Suite • Process improvement • Quality control • Testing and bugging • Project management • 
+        Agile development methodologies • Data extraction and synchronization • Microsoft suite
       </div>
-      <div class="tab">
-        <button class="tablinks" onmouseover="openProjects(event, 'virtualPet')">Virtual Pet</button>
-        <button class="tablinks" onmouseover="openProjects(event, 'virtualPetShelter')">Virtual Pet Shelter</button>
-        <button class="tablinks" onmouseover="openProjects(event, 'virtualPetAmok')">Virtual Pet Amok</button>
-        <button class="tablinks" onmouseover="openProjects(event, 'reviewsSite')">Reviews Site</button>
-      </div>
-      <div id="VirtualPet" class="tabcontent">
-        <h3>Flow of Control and Class Design</h3>
-        <p>V pet place holder</p>
-      </div>
+    </div>
+
+<div id="projects__header">
+    <h1>Projects:</h1>
+</div>
+
+      <div id="my__projects">
+    <div>
+      <h2>Virtual Pet</h2>
+      <p>A version of a Tamagotchi or a Digipet. Created a game loop that updates everything 
+        in the game representing the passage if time. Implimented a tick() method that updated all instance
+        variables that represented the state of my pet.
+      </p>
+    </div>
+
+    <div>
+      <h2>Virtual Pet Shelter </h2>
+      <p>An iteration of virtual pet demonstrating inheritance. Introduced methods that allowed for: 
+        oiling robotic pets, and walking dogs, decreasing the likelihood that
+        organic dogs will soil their cages, while increasing happiness in all dogs.
+         </p>
+    </div>
+    
+    <div>
+      <h2>Album Review Site</h2>
+      <p>Created an Album review site that categorizes reviews. A Spring Boot
+         + MVC app that displayed a list of reviews, allowing a user to click on an individual review to see its details. 
+         Created accessor methods that return information about review attributes, 
+         allowing Thymeleaf templates to display information.</p>
+    </div>
+
+    <div>
+      <h2>Group Aquarium</h2>
+      <p>A Group project that was made to represent an aquarium shopping site. 
+        The user can add and remove fish information to the site. This utilized github and Agile methodologies. </p>
+    </div>
+
+    <div>
+      <h2>Drip Catalog</h2>
+      <p>An app developed using object oriented design allowing the application to be flexible and interactive. 
+        It's able to find the user’s location using Google’s Geo Loaction API. It's also able to use that 
+        functionality to determine a user’s Geo Location to use that information to pull the clients forecast using the OpenWeather API. 
+        The App stores information in the clients browser as a cookie to use on different parts of the website. 
+        </p>
+    </div>
+
+    <div id="code__carousels">
       
-      <div id="VirtualPetShelter" class="tabcontent">
-        <h3> Java Collections</h3>
-        <p>V pet shelter place holder</p>
-      </div>
-      
-      <div id="VirtualPetAmok" class="tabcontent">
-        <h3>Inheritance</h3>
-        <p>V pet amok place holder</p>
-      </div>
-      
-      <div id="ReviewsSite" class="tabcontent">
-        <h3>Spring MVC</h3>
-        <p>Review Site place holder</p>
-      </div>
-      
-    </section>
-    <section id="contactInfo">
+
+    </div>
+
+    </div>
+    <section id="contact__info">
       <h2>Contact Information</h2>
 
       <p>Contact me at:</p>
@@ -113,8 +113,5 @@
       </ul>
     </section>
   </main>
- 
-  <footer>&copy; 2020 Evan Adkins</footer>
-  <script src="index.js"></script>
 </body>
 </html>
