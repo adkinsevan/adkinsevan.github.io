@@ -87,6 +87,12 @@ html {
   padding: 2em;
 }
 
+.education {
+  display: inline;
+  background-color: #2f4550;
+  float: right;
+}
+
 #skills {
   padding-left: 2em;
   padding-bottom: 2em;
@@ -122,6 +128,10 @@ html {
   padding: 3em;
   color: #f4f4f9;
   background-color: #2f4550;
+}
+
+#my__projects p {
+  padding-right: 2em;
 }
 
 #code__carousel {
